@@ -1,10 +1,9 @@
 import sbt.Keys.resolvers
-
 lazy val $projectName$JS = (project in file("."))
-  .enablePlugins(ScalaJSPlugin)  .settings(
+  .settings(
     name := "$projectName$JS",
-    version := $appVersion$,
-    scalaVersion := $scalaVersion$,
+    version := "$appVersion$",
+    scalaVersion := "$scalaVersion$",
     resolvers += "aliyun-js" at "http://maven.aliyun.com/repository/central",
     resolvers += "bintray" at "https://dl.bintray.com/definitelyscala/maven/",
     resolvers += Classpaths.typesafeReleases,

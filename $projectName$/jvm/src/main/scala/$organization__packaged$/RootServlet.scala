@@ -1,7 +1,7 @@
-package linsixin.app
+package $organization$
 
 import org.scalatra._
-class respServlet extends ScalatraServlet {
+class RootServlet extends ScalatraServlet {
 
   get("/") {
     views.html.hello()
